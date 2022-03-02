@@ -17,6 +17,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import com.codersth.android.foundation.R
+import com.codersth.android.foundation.util.FileUtil
 import java.io.BufferedReader
 import java.io.File
 
@@ -123,24 +124,16 @@ class FSMainActivity : AppCompatActivity() {
         val fileName = "testread.txt"
         if (PRINT_INTERNAL_VOLUME and pathTypes != 0) {
             val file = File(filesDir, fileName)
-            Log.d(TAG, "${getString(R.string.internal_storage_volume)}: read file content: ${readFileContent(file)}")
+            Log.d(TAG, "${getString(R.string.internal_storage_volume)}: read file content: ${FileUtil.readFileContent(file)}")
         }
         if (PRINT_EXTERNAL_VOLUME_SPECIFIC and pathTypes != 0) {
             val file = File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), fileName)
-            Log.d(TAG, "${getString(R.string.external_storage_volume_specific)}: read file content: ${readFileContent(file)}")
+            Log.d(TAG, "${getString(R.string.external_storage_volume_specific)}: read file content: ${FileUtil.readFileContent(file)}")
         }
         if (PRINT_EXTERNAL_VOLUME_SHARE and pathTypes != 0) {
             val file = File(Environment.getExternalStorageDirectory(), fileName)
-            Log.d(TAG, "${getString(R.string.external_storage_volume_share)}: read file content: ${readFileContent(file)}")
+            Log.d(TAG, "${getString(R.string.external_storage_volume_share)}: read file content: ${FileUtil.readFileContent(file)}")
         }
-    }
-
-    /**
-     * 读取文件内容
-     * @return 文本内容，utf-8
-     */
-    private fun readFileContent(file: File): String {
-        return file.bufferedReader().use(BufferedReader::readText)
     }
 
     /**

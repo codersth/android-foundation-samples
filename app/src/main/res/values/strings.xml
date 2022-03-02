@@ -3,4 +3,6 @@
     <string name="internal_storage_volume">内部存储</string>
     <string name="external_storage_volume_specific">外部存储（私有目录）</string>
     <string name="external_storage_volume_share">外部存储（共享目录）</string>
+    <string name="capture">capture</string>
+    <string name="pass_uri">pass uri</string>
 </resources>

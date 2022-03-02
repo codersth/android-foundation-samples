@@ -4,7 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/developer/workspace/android-foundation-samples/app/src/main/res/layout/activity_fsmain.xml" value="0.1956521739130435" />
+        <entry key="..\:/developer/workspace/android-foundation-samples/app/src/main/res/layout/activity_inter_app_file_access.xml" value="0.1" />
         <entry key="..\:/developer/workspace/android-foundation-samples/app/src/main/res/layout/activity_main.xml" value="0.1890625" />
+        <entry key="..\:/developer/workspace/android-foundation-samples/app/src/main/res/layout/activity_test_capture.xml" value="0.14583333333333334" />
+        <entry key="..\:/developer/workspace/android-foundation-samples/app/src/main/res/layout/activity_test_pass_uri.xml" value="0.11458333333333333" />
+        <entry key="..\:/developer/workspace/android-foundation-samples/app/src/main/res/xml/file_paths.xml" value="0.11927083333333334" />
       </map>
     </option>
   </component>
